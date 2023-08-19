@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+body{
+  background-color: lightgrey;
+}
+
+.firstPage{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/* מסיר את שולי ברירת המחדל מאלמנט הרשימה הלא מסודרת (<ul>) בתוך אלמנט עם המחלקה "nav" */
+.nav ul {
+  margin: 0;
+}
+/*מציג את פריטי הרשימה (<li>) בשורה בתוך תפריט ניווט. */
+.nav li {
+  display: inline;
+}
+/* מציג רכיבי עוגן (<a>) כבלוקים מוטבעים בתפריט הניווט. הוא מחיל ריפוד, מגדיר את צבע הטקסט ללבן ומסיר את עיטור הטקסט המוגדר כברירת מחדל.*/
+.nav a {
+  display: inline-block;
+  padding: 0.5em;
+  color: white;
+  text-decoration: none;
+}
+/*מעצב את תפריט הניווט הראשי. הוא מרכז את הטקסט, קובע את גודל הגופן, הופך את משקל הגופן לקל יותר ומוסיף גבול תחתון עם אפקט שקיפות.*/
+.main-nav {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: lighter;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+/*מוסיף ריפוד לשמאל ולימין של כל פריט ברשימה (<li>) בתפריט הניווט הראשי.*/
+.main-nav li {
+  padding: 0 5%;
+}
+/*מגדיר את צבע הרקע בעת ריחוף מעל רכיבי עוגן (<a>) בתפריט הניווט.*/
+.nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+/*מעצב את קטע הכותרת הראשי. הוא מגדיר צבע רקע שחור שקוף למחצה, מחיל מצב מיזוג על הרקע, מתאים את גודל הרקע ומוסיף קצת ריפוד בתחתית.*/
+.main-header {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  background-size: contain;
+  padding-bottom: 30px;
+}
+/*מעצב את שם החנות. הוא מרכז את הטקסט, מסיר את שולי ברירת המחדל, מגדיר את גודל הגופן, משפחת הגופנים, משקל הגופן וצבע הטקסט.*/
+.Store-name {
+  text-align: center;
+  margin: 0;
+  font-size: 4em;
+  font-family: "Metal Mania", cursive;
+  font-weight: normal;
+  color: #fff;
+}
+/*מעצב את שם החנות בגודל גופן גדול יותר.*/
+.Store-name-large {
+  font-size: 6em;
+}
+/*מוסיף שוליים מסביב למקטעי התוכן של דף האינטרנט.*/
+.content-section {
+  margin: 1em;
+}
+/*מגדיר מיכל ברוחב מרבי של 900 פיקסלים, מרכז אותו אופקית בתוך אלמנט האב שלו ומוסיף ריפוד בצד שמאל וימין.*/
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+/*מעצב כותרת של מקטע*/
+.section-header {
+  font-family: "Metal Mania", cursive;
+  font-weight: normal;
+  color: #000000;
+  text-align: center;
+  font-size: 2.5em;
+}
+/*מעצב את רכיב שם החנות כאשר מרחף מעליו. זה משנה את צבע הטקסט לאפור בהיר.*/
+.Store-name:hover {
+  color: lightslategrey;
+}
+
+/*כפתורי סגנונות.*/
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.67em 0.67em;
+  cursor: pointer;
+}
+
+/*סגנונות כפתורים ראשיים. הוא מגדיר את צבע הטקסט ללבן*/
+.btn-primary {
+  color: white;
+  background-color: #56ccf2;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+/*מעצב כפתורים ראשיים*/
+.btn-primary:hover {
+  background-color: #2d9cdb;
+}
+/*סגנונות פריטי חנות. זה מוסיף שוליים של 30 פיקסלים לכל הצדדים של האלמנט.*/
+.shop-item {
+  margin: 30px;
+}
+/*מעצב את הכותרת של פריט בחנות. היא מגדירה את התצוגה לחסימה, מגדירה את הרוחב ל-100%, מרכזת את הטקסט אופקית, הופכת את משקל הגופן למודגש, מגדירה את גודל הגופן ל-1.5em, מגדירה את צבע הטקסט ל-#333 ומוסיפה שוליים תחתונים של 15px.*/
+.shop-item-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+}
+/*מעצב את התמונה של פריט בחנות*/
+.shop-item-image {
+  height: 250px;
+  width: 270px;
+  opacity: 1.0;
+  
+}
+.shop-item-image:hover {
+  opacity: 0.5;
+  
+}
+/*מעצב את קטע הפרטים של פריט בחנות*/
+.shop-item-details {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+/*מעצב את המחיר של פריט בחנות*/
+.shop-item-price {
+  flex-grow: 1;
+  color: #000000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*מעצב את מיכל פריטי החנות. זה מגדיר את התצוגה להתגמש, מאפשר לפריטים להתעטף לקו חדש כאשר אין מספיק מקום אופקי, ומפזר את הפריטים עם שטח שווה סביבם אופקית*/
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/*מעצב את הכותרת של מקטע העגלה*/
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #333;
+}
+/*מעצב את העמודות של העגלה. זה מגדיר את התצוגה להתגמש, מיישר את הפריטים אנכית במרכז, מוסיף גבול תחתון של 1px שחור מלא, מוסיף שוליים ימניים של 1.5em, מוסיף ריפוד תחתון של 10px, ומוסיף שוליים עליונים של 10px.*/
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+/*מעצב את השורות בקטע העגלה. זה מגדיר את התצוגה להתגמש, ומאפשר להציג את פריטי העגלה בשורה*/
+.cart-row {
+  display: flex;
+}
+/*מעצב את עמודת פריט העגלה*/
+.cart-item {
+  width: 45%;
+}
+/*מעצב את עמודת מחיר העגלה*/
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+}
+/*מעצב את עמודת כמות העגלה*/
+.cart-quantity {
+  width: 35%;
+}
+/*מעצב את הכותרת של פריט בעגלה*/
+.cart-item-title {
+  color: #333;
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+/*מעצב את התמונה של פריט בעגלה. הוא מגדיר את הרוחב ל-75 פיקסלים, מאפשר לגובה להתכוונן אוטומטית תוך שמירה על יחס הגובה-רוחב, ומוסיף רדיוס גבול של 10 פיקסלים לפינות מעוגלות.*/
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+/*מעצב את שדה הזנת הכמות בעגלה. הוא מגדיר את הגובה ל-34 פיקסלים, הרוחב ל-50 פיקסלים, רדיוס הגבול ל-5 פיקסלים, מוסיף גבול מלא של 1 פיקסלים עם צבע #56ccf2, מגדיר את צבע הרקע ל-#eee, צבע הטקסט ל-#333, מסיר כל ריפוד, מרכז את הטקסט, מגדיר את גודל גופן ל-1.2em, ומוסיף שוליים ימניים של 25px.*/
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56ccf2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+/*מעצב את השורה האחרונה של העגלה. זה מוסיף גבול תחתון של 1 פיקסלים שחור מלא*/
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+/*מעצב את העמודות של השורה האחרונה בעגלה. זה מסיר את הגבול.*/
+.cart-row:last-child .cart-column {
+  border: none;
+}
+/*מעצב את החלק הכולל של העגלה. הוא מיישר את הטקסט לקצה (מימין) של המיכל שלו ומוסיף שוליים עליונים של 10px ושולי ימין של 10px.*/
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+/*מעצב את הכותרת של החלק הכולל של העגלה*/
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+/*מעצב את המחיר בחלק הכולל של העגלה*/
+.cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+/*מעצב את כפתור הרכישה*/
+.btn-purchase {
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 1.75em;
+}
